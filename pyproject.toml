@@ -10,7 +10,6 @@ readme = "README.md"
 authors = [
     { name = "Wandersalamander" }
 ]
-license = { text = "MIT" }
 keywords = ["tomography", "nonlinear", "algorithm", "imaging", "scientific computing"]
 classifiers = [
     "Programming Language :: Python :: 3",
