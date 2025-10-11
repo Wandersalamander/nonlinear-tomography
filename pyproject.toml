@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonlinear_tomography"
+version = "0.1.0"
+description = "A Python package implementing a nonlinear tomography algorithm."
+readme = "README.md"
+authors = [
+    { name = "Wandersalamander" }
+]
+license = { text = "MIT" }
+keywords = ["tomography", "nonlinear", "algorithm", "imaging", "scientific computing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+
+dependencies = [
+    "numpy",
+    "numba",
+    "matplotlib",
+    "scipy",
+    "tqdm",
+    "pillow",
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit"]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 78
+target-version = "py312"
+select = ["I"]  # Include import-related checks (I)
+fixable = ["I"]  # Allow fixing import sorting issues
+# You can add more options like extend-ignore, exclude, etc.
+
+[tool.isort]
+profile = "black"  # Or your preferred style
+line_length = 78
+known_first_party = ["nonlinear_tomography"]
+src_paths = ["src"]
