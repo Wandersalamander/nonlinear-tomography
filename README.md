@@ -28,11 +28,6 @@ Generate the histograms for the reconstruction:
 ```bash
 python examples/b_make_test_data.py
 ```
-Place your measurement `.npy` files inside the folder:
-
-```
-resources/lambdas/
-```
 
 Then, run the main script:
 
@@ -43,7 +38,7 @@ python examples/c_perform_reconstruction.py
 This will:
 
 * Load measurements and parameters.
-* Generate mappings using between the input and measurement plane using `blackbox`.
+* Generate mappings between the input and measurement plane using `blackbox` function.
 * Perform reconstruction to recover weights.
 * Display plots comparing measured and reconstructed data.
 
