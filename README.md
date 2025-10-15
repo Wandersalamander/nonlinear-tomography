@@ -1,4 +1,4 @@
-> [! IMPORTANT]
+> [!IMPORTANT]
 > Only for educational purposes
 
 # Nonlinear Tomography
